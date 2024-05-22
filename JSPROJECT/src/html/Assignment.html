@@ -4,41 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/src/js/Assignment.js"></script>
     <link rel="stylesheet" href="/src/css/Assignment.css">
 </head>
 <body>
-    <div align-center>
-    <h1>Presenting the Use Case</h1>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="Enter Name"><br><br>
+    <div class="container">
+        <h1>Presenting the Use Case</h1>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name"><br><br>
 
-    <label for="email">Email Id:</label>
-    <input type="email" id="email" name="email" placeholder="Enter Email"><br><br>
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email"><br><br>
 
-    <label for="phone">Contact No.:</label>
-    <input type="number" id="phone" name="phone" placeholder="Enter Contact no."><br><br>
+            <label for="phone">Contact No.:</label>
+            <input type="number" id="phone" name="phone" placeholder="Enter Contact no."><br><br>
 
-    <label for="account_type">Account Type</label>
-    <select id="account_type" name="account_type">
-        <option value="" disabled selected>Select Account Type</option>
-        <option value="Current">Current</option>
-        <option value="Savings">Savings</option>
-    </select><br><br>
-    <button type="button" onclick="addData()">Add Customer</button><br><br><br><br>
-    <table id="dataTable" border="1">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Contact</th>
-                <th>Account Type</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Table rows will be dynamically added here -->
-        </tbody>
-    </table>
-</div>
+            <label for="account_type">Account Type</label>
+            <select id="account_type" name="account_type">
+                <option value="" disabled selected>Select Account Type</option>
+                <option value="Current">Current</option>
+                <option value="Savings">Savings</option>
+            </select><br><br>
+            <button type="submit">Add Customer</button><br><br><br><br>
+        </form>
+        <table id="dataTable" border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Account Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="/src/js/Assignment.js"></script>
 </body>
 </html>
